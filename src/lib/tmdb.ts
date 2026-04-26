@@ -1,8 +1,11 @@
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY as string;
 const BASE_URL = "https://api.themoviedb.org/3";
 
-if (!API_KEY) {
-  throw new Error("Missing TMDB API key. Add VITE_TMDB_API_KEY to your .env file.");
+// Don't throw error at import time - handle it gracefully when making API calls
+const hasApiKey = Boolean(API_KEY);
+
+if (typeof window !== 'undefined' && !hasApiKey) {
+  console.warn("VITE_TMDB_API_KEY is not configured. The app will not function properly. Please add your TMDB API key to the .env file.");
 }
 
 export type Lang = "en-US" | "ar-SA";
@@ -31,6 +34,12 @@ async function tmdb<T>(
   params: Record<string, string | number> = {},
   lang: Lang = "en-US"
 ): Promise<T> {
+  if (!hasApiKey) {
+    console.warn("Cannot make API request - TMDB API key is not configured");
+    // Return empty results structure
+    return { results: [] } as T;
+  }
+  
   const url = new URL(`${BASE_URL}${path}`);
   url.searchParams.set("api_key", API_KEY);
   url.searchParams.set("language", lang);

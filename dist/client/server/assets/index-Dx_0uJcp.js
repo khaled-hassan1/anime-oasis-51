@@ -1,8 +1,8 @@
-import { r as reactExports, T as jsxRuntimeExports } from "./worker-entry-CKMMbsXz.js";
-import { c as createLucideIcon, m as motion, L as Link, u as useLanguage } from "./router-B6-WEqMk.js";
-import { I as IMG, S as Star, P as Play, g as getDetails, a as getTrendingAnime, b as getTopRatedAnime, c as getNewReleases, e as getAnimatedMovies } from "./tmdb-BpKqFkOO.js";
-import { A as AnimatePresence } from "./index-Dyya3tGO.js";
-import { M as MediaCardSkeleton, a as MediaCard } from "./MediaCard-Ct51KRxv.js";
+import { r as reactExports, T as jsxRuntimeExports } from "./worker-entry-2TdCFKDf.js";
+import { c as createLucideIcon, m as motion, L as Link, u as useLanguage } from "./router-Zht4mv2_.js";
+import { I as IMG, S as Star, P as Play, g as getDetails, a as getTrendingAnime, b as getTopRatedAnime, c as getNewReleases, e as getAnimatedMovies } from "./tmdb-C9zxnJOb.js";
+import { A as AnimatePresence } from "./index-BiOrfjL3.js";
+import { M as MediaCardSkeleton, a as MediaCard } from "./MediaCard-CiEZrhkq.js";
 import "node:events";
 import "node:async_hooks";
 import "node:stream/web";
@@ -164,6 +164,7 @@ function HomePage() {
   const [topRated, setTopRated] = reactExports.useState();
   const [newReleases, setNewReleases] = reactExports.useState();
   const [movies, setMovies] = reactExports.useState();
+  const hasApiKey = true;
   reactExports.useEffect(() => {
     setFeatured([]);
     setTrending(void 0);
@@ -182,7 +183,7 @@ function HomePage() {
     getTopRatedAnime(lang).then(setTopRated).catch(() => setTopRated([]));
     getNewReleases(lang).then(setNewReleases).catch(() => setNewReleases([]));
     getAnimatedMovies(lang).then(setMovies).catch(() => setMovies([]));
-  }, [lang]);
+  }, [lang, hasApiKey]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
     featured && featured.length > 0 ? /* @__PURE__ */ jsxRuntimeExports.jsx(Hero, { items: featured }) : /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-[75vh] md:h-[90vh] shimmer" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(MediaRow, { title: t("trending"), items: trending, loading: !trending }),

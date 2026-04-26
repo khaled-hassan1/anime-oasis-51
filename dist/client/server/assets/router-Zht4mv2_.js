@@ -1,4 +1,4 @@
-import { r as reactExports, f as functionalUpdate, a as arraysEqual, c as createLRUCache, i as isPromise, b as isRedirect, d as isNotFound, e as invariant$1, g as createControlledPromise, h as rootRouteId, j as isServer, k as compileDecodeCharMap, t as trimPath, l as rewriteBasepath, m as composeRewrites, p as processRouteTree, n as processRouteMasks, o as resolvePath, q as cleanPath, s as trimPathRight, u as parseHref, v as executeRewriteInput, w as isDangerousProtocol, x as redirect, y as findSingleMatch, z as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, A as interpolatePath, B as nullReplaceEqualDeep, C as replaceEqualDeep, E as last, F as decodePath, G as findFlatMatch, H as findRouteMatch, I as executeRewriteOutput, J as encodePathLikeUrl, K as trimPathLeft, L as joinPaths, M as useRouter, N as dummyMatchContext, O as matchContext, P as requireReactDom, Q as exactPathTest, R as removeTrailingSlash, S as React, T as jsxRuntimeExports, U as isModuleNotFoundError, V as useHydrated, W as escapeHtml, X as getAssetCrossOrigin, Y as resolveManifestAssetLink, Z as Outlet } from "./worker-entry-CKMMbsXz.js";
+import { r as reactExports, f as functionalUpdate, a as arraysEqual, c as createLRUCache, i as isPromise, b as isRedirect, d as isNotFound, e as invariant$1, g as createControlledPromise, h as rootRouteId, j as isServer, k as compileDecodeCharMap, t as trimPath, l as rewriteBasepath, m as composeRewrites, p as processRouteTree, n as processRouteMasks, o as resolvePath, q as cleanPath, s as trimPathRight, u as parseHref, v as executeRewriteInput, w as isDangerousProtocol, x as redirect, y as findSingleMatch, z as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, A as interpolatePath, B as nullReplaceEqualDeep, C as replaceEqualDeep, E as last, F as decodePath, G as findFlatMatch, H as findRouteMatch, I as executeRewriteOutput, J as encodePathLikeUrl, K as trimPathLeft, L as joinPaths, M as useRouter, N as dummyMatchContext, O as matchContext, P as requireReactDom, Q as exactPathTest, R as removeTrailingSlash, S as React, T as jsxRuntimeExports, U as isModuleNotFoundError, V as useHydrated, W as escapeHtml, X as getAssetCrossOrigin, Y as resolveManifestAssetLink, Z as Outlet } from "./worker-entry-2TdCFKDf.js";
 var reactUse = reactExports.use;
 function useForwardedRef(ref) {
   const innerRef = reactExports.useRef(null);
@@ -10824,7 +10824,7 @@ function Navbar() {
     }
   );
 }
-const appCss = "/anime-oasis-51/assets/styles-O8nWimZB.css";
+const appCss = "/anime-oasis-51/assets/styles-CbZUfPV7.css";
 function NotFoundComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-7xl font-bold text-foreground", children: "404" }),
@@ -10909,7 +10909,7 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "border-t border-border/50 mt-16 py-8 text-center text-sm text-muted-foreground", children: "ANIMEDIA · Powered by ❤️ · Built for fans" })
   ] });
 }
-const $$splitComponentImporter$5 = () => import("./tv-DkLgLjyk.js");
+const $$splitComponentImporter$5 = () => import("./tv-UfgioCzm.js");
 const Route$5 = createFileRoute("/tv")({
   head: () => ({
     meta: [{
@@ -14500,7 +14500,7 @@ const enumType = ZodEnum.create;
 ZodPromise.create;
 ZodOptional.create;
 ZodNullable.create;
-const $$splitComponentImporter$4 = () => import("./search-C9Miyivj.js");
+const $$splitComponentImporter$4 = () => import("./search-UniuQ5fx.js");
 const searchSchema$1 = objectType({
   q: stringType().optional()
 });
@@ -14525,7 +14525,7 @@ const Route$4 = createFileRoute("/search")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./my-list-Bp1diT7K.js");
+const $$splitComponentImporter$3 = () => import("./my-list-DMfBOHOw.js");
 const Route$3 = createFileRoute("/my-list")({
   head: () => ({
     meta: [{
@@ -14546,7 +14546,7 @@ const Route$3 = createFileRoute("/my-list")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-const $$splitComponentImporter$2 = () => import("./movies-BHpiO_0f.js");
+const $$splitComponentImporter$2 = () => import("./movies-DeztAgzW.js");
 const Route$2 = createFileRoute("/movies")({
   head: () => ({
     meta: [{
@@ -14567,7 +14567,7 @@ const Route$2 = createFileRoute("/movies")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-const $$splitComponentImporter$1 = () => import("./index-BSmb9H_z.js");
+const $$splitComponentImporter$1 = () => import("./index-Dx_0uJcp.js");
 const Route$1 = createFileRoute("/")({
   head: () => ({
     meta: [{
@@ -14588,7 +14588,7 @@ const Route$1 = createFileRoute("/")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./watch._id-BYeAKMEi.js");
+const $$splitComponentImporter = () => import("./watch._id-BR-7E3C3.js");
 const searchSchema = objectType({
   type: enumType(["tv", "movie"]).optional()
 });

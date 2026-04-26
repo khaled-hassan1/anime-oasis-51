@@ -48,8 +48,20 @@ function HomePage() {
   const [topRated, setTopRated] = useState<Media[]>();
   const [newReleases, setNewReleases] = useState<Media[]>();
   const [movies, setMovies] = useState<Media[]>();
+  const hasApiKey = !!import.meta.env.VITE_TMDB_API_KEY;
 
   useEffect(() => {
+    if (!hasApiKey) {
+      console.warn("VITE_TMDB_API_KEY is not configured");
+      // Set all to empty to show the warning
+      setFeatured([]);
+      setTrending([]);
+      setTopRated([]);
+      setNewReleases([]);
+      setMovies([]);
+      return;
+    }
+
     // إعادة تعيين الحالات عند تغيير اللغة
     setFeatured([]);
     setTrending(undefined);
@@ -79,7 +91,36 @@ function HomePage() {
     getTopRatedAnime(lang).then(setTopRated).catch(() => setTopRated([]));
     getNewReleases(lang).then(setNewReleases).catch(() => setNewReleases([]));
     getAnimatedMovies(lang).then(setMovies).catch(() => setMovies([]));
-  }, [lang]);
+  }, [lang, hasApiKey]);
+
+  if (!hasApiKey) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4 py-16">
+        <div className="max-w-md text-center">
+          <h1 className="text-3xl font-bold text-foreground mb-4">⚙️ Configuration Required</h1>
+          <p className="text-muted-foreground mb-6">
+            To use this application, you need to add a TMDB API key.
+          </p>
+          <div className="bg-muted p-4 rounded-lg text-left mb-6">
+            <p className="text-sm mb-3"><strong>Development:</strong></p>
+            <code className="text-xs bg-background p-2 rounded block mb-3">
+              VITE_TMDB_API_KEY=your_key_here
+            </code>
+            <p className="text-sm mb-3"><strong>GitHub Pages:</strong></p>
+            <p className="text-xs">Add secret in repository Settings &gt; Secrets and variables &gt; Actions</p>
+          </div>
+          <a
+            href="https://www.themoviedb.org/settings/api"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors text-sm"
+          >
+            Get API Key
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>

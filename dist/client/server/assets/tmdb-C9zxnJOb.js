@@ -1,4 +1,4 @@
-import { c as createLucideIcon } from "./router-B6-WEqMk.js";
+import { c as createLucideIcon } from "./router-Zht4mv2_.js";
 const __iconNode$1 = [
   [
     "path",
@@ -21,8 +21,16 @@ const __iconNode = [
 const Star = createLucideIcon("star", __iconNode);
 const API_KEY = "c11da6e9f5f8b8907c3456fcec009196";
 const BASE_URL = "https://api.themoviedb.org/3";
+const hasApiKey = Boolean(API_KEY);
+if (typeof window !== "undefined" && !hasApiKey) {
+  console.warn("VITE_TMDB_API_KEY is not configured. The app will not function properly. Please add your TMDB API key to the .env file.");
+}
 const IMG = (path, size = "w500") => path ? `https://image.tmdb.org/t/p/${size}${path}` : "";
 async function tmdb(path, params = {}, lang = "en-US") {
+  if (!hasApiKey) {
+    console.warn("Cannot make API request - TMDB API key is not configured");
+    return { results: [] };
+  }
   const url = new URL(`${BASE_URL}${path}`);
   url.searchParams.set("api_key", API_KEY);
   url.searchParams.set("language", lang);

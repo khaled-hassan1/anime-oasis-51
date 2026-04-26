@@ -2,41 +2,63 @@
 
 Anime Oasis is a fan-made anime explorer built with Vite and React. It uses TMDB to show anime, movies, and details for popular series.
 
-## Setup
+## Getting Started
 
-1. Copy the `.env` file or create your own.
-2. Add your TMDB API key to `.env`:
+### Prerequisites
+
+You'll need a TMDB API key to use this application. Get one for free at [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
+
+### Local Development
+
+1. Clone the repository
+2. Create a `.env` file in the root directory (see `.env.example` for the template)
+3. Add your TMDB API key:
 
 ```env
 VITE_TMDB_API_KEY=your_tmdb_api_key_here
 ```
 
-3. Install dependencies:
+4. Install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
-4. Run the app:
+5. Start the development server:
 
 ```bash
-bun run dev
+npm run dev
 ```
 
-## Deploy to GitHub Pages
+The app will open at `http://localhost:8080/anime-oasis-51/`
 
-1. Push your code to a GitHub repository named `anime-oasis-51`.
-2. Go to your repository settings > Pages.
-3. Set source to "GitHub Actions".
-4. Add your TMDB API key to repository secrets:
-   - Go to Settings > Secrets and variables > Actions
-   - Add new secret: `VITE_TMDB_API_KEY` with your API key value.
-5. Push to `main` branch - the deployment will happen automatically.
+## Deployment to GitHub Pages
 
-## Important
+### Prerequisites
 
-- Do not commit your real API key.
-- The app reads the TMDB key from `VITE_TMDB_API_KEY` in `.env`.
+- GitHub repository
+- TMDB API key
+
+### Steps
+
+1. Fork or push your code to GitHub
+2. Go to your repository **Settings > Secrets and variables > Actions**
+3. Click **New repository secret** and add:
+   - Name: `VITE_TMDB_API_KEY`
+   - Value: Your TMDB API key
+4. Go to **Settings > Pages**
+5. Set "Source" to "GitHub Actions"
+6. Push to the `main` branch - GitHub Actions will automatically build and deploy
+
+The app will be available at: `https://your-username.github.io/anime-oasis-51/`
+
+## Important Security Notes
+
+⚠️ **Do not commit your API key to the repository!**
+
+- `.env` file is in `.gitignore` and won't be committed
+- Use GitHub Secrets for production deployments
+- The app will gracefully handle missing API keys and show a configuration message
 
 ## Featured Anime Suggestions
 

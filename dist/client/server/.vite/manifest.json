@@ -1,0 +1,199 @@
+{
+  "%23tanstack-start-plugin-adapters": {
+    "file": "assets/__23tanstack-start-plugin-adapters-Cwee5PKy.js",
+    "name": "__23tanstack-start-plugin-adapters",
+    "src": "%23tanstack-start-plugin-adapters",
+    "isDynamicEntry": true
+  },
+  "C:/Users/khaled-ghaly/Desktop/anime-oasis-51/src/styles.css": {
+    "file": "assets/styles-O8nWimZB.css",
+    "src": "C:/Users/khaled-ghaly/Desktop/anime-oasis-51/src/styles.css"
+  },
+  "_FilterBar-CmJyKAtj.js": {
+    "file": "assets/FilterBar-CmJyKAtj.js",
+    "name": "FilterBar",
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_tmdb-BpKqFkOO.js",
+      "_router-B6-WEqMk.js"
+    ]
+  },
+  "_MediaCard-Ct51KRxv.js": {
+    "file": "assets/MediaCard-Ct51KRxv.js",
+    "name": "MediaCard",
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js",
+      "_tmdb-BpKqFkOO.js"
+    ]
+  },
+  "_MediaGrid-1mLGZdc1.js": {
+    "file": "assets/MediaGrid-1mLGZdc1.js",
+    "name": "MediaGrid",
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_MediaCard-Ct51KRxv.js"
+    ]
+  },
+  "_index-Dyya3tGO.js": {
+    "file": "assets/index-Dyya3tGO.js",
+    "name": "index",
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js"
+    ]
+  },
+  "_loader-circle-DKFhMDxw.js": {
+    "file": "assets/loader-circle-DKFhMDxw.js",
+    "name": "loader-circle",
+    "imports": [
+      "_router-B6-WEqMk.js"
+    ]
+  },
+  "_myList-AQCtOnBJ.js": {
+    "file": "assets/myList-AQCtOnBJ.js",
+    "name": "myList"
+  },
+  "_router-B6-WEqMk.js": {
+    "file": "assets/router-B6-WEqMk.js",
+    "name": "router",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js"
+    ],
+    "dynamicImports": [
+      "src/routes/tv.tsx?tsr-split=component",
+      "src/routes/search.tsx?tsr-split=component",
+      "src/routes/my-list.tsx?tsr-split=component",
+      "src/routes/movies.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component",
+      "src/routes/watch.$id.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/styles-O8nWimZB.css"
+    ]
+  },
+  "_tmdb-BpKqFkOO.js": {
+    "file": "assets/tmdb-BpKqFkOO.js",
+    "name": "tmdb",
+    "imports": [
+      "_router-B6-WEqMk.js"
+    ]
+  },
+  "_worker-entry-CKMMbsXz.js": {
+    "file": "assets/worker-entry-CKMMbsXz.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "tanstack-start-manifest:v",
+      "_router-B6-WEqMk.js",
+      "node_modules/@tanstack/react-start/dist/plugin/default-entry/start.ts",
+      "%23tanstack-start-plugin-adapters"
+    ]
+  },
+  "node_modules/@tanstack/react-start/dist/plugin/default-entry/start.ts": {
+    "file": "assets/start-HYkvq4Ni.js",
+    "name": "start",
+    "src": "node_modules/@tanstack/react-start/dist/plugin/default-entry/start.ts",
+    "isDynamicEntry": true
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-BSmb9H_z.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js",
+      "_tmdb-BpKqFkOO.js",
+      "_index-Dyya3tGO.js",
+      "_MediaCard-Ct51KRxv.js"
+    ]
+  },
+  "src/routes/movies.tsx?tsr-split=component": {
+    "file": "assets/movies-BHpiO_0f.js",
+    "name": "movies",
+    "src": "src/routes/movies.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_FilterBar-CmJyKAtj.js",
+      "_MediaGrid-1mLGZdc1.js",
+      "_tmdb-BpKqFkOO.js",
+      "_router-B6-WEqMk.js",
+      "_loader-circle-DKFhMDxw.js",
+      "_MediaCard-Ct51KRxv.js"
+    ]
+  },
+  "src/routes/my-list.tsx?tsr-split=component": {
+    "file": "assets/my-list-Bp1diT7K.js",
+    "name": "my-list",
+    "src": "src/routes/my-list.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js",
+      "_myList-AQCtOnBJ.js",
+      "_tmdb-BpKqFkOO.js",
+      "_index-Dyya3tGO.js"
+    ]
+  },
+  "src/routes/search.tsx?tsr-split=component": {
+    "file": "assets/search-C9Miyivj.js",
+    "name": "search",
+    "src": "src/routes/search.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js",
+      "_tmdb-BpKqFkOO.js",
+      "_MediaGrid-1mLGZdc1.js",
+      "_loader-circle-DKFhMDxw.js",
+      "_MediaCard-Ct51KRxv.js"
+    ]
+  },
+  "src/routes/tv.tsx?tsr-split=component": {
+    "file": "assets/tv-DkLgLjyk.js",
+    "name": "tv",
+    "src": "src/routes/tv.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_FilterBar-CmJyKAtj.js",
+      "_MediaGrid-1mLGZdc1.js",
+      "_tmdb-BpKqFkOO.js",
+      "_router-B6-WEqMk.js",
+      "_loader-circle-DKFhMDxw.js",
+      "_MediaCard-Ct51KRxv.js"
+    ]
+  },
+  "src/routes/watch.$id.tsx?tsr-split=component": {
+    "file": "assets/watch._id-BYeAKMEi.js",
+    "name": "watch._id",
+    "src": "src/routes/watch.$id.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js",
+      "_router-B6-WEqMk.js",
+      "_tmdb-BpKqFkOO.js",
+      "_myList-AQCtOnBJ.js",
+      "_MediaCard-Ct51KRxv.js",
+      "_index-Dyya3tGO.js",
+      "_loader-circle-DKFhMDxw.js"
+    ]
+  },
+  "tanstack-start-manifest:v": {
+    "file": "assets/_tanstack-start-manifest_v-hElzRxlM.js",
+    "name": "_tanstack-start-manifest_v",
+    "src": "tanstack-start-manifest:v",
+    "isDynamicEntry": true
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-CKMMbsXz.js"
+    ]
+  }
+}
